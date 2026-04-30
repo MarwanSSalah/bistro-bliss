@@ -2,6 +2,8 @@
 
 import { useState, useMemo, useEffect } from "react";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "${API_URL}";
+
 export default function BookingForm() {
   const [form, setForm] = useState({
     date: "", time: "", name: "", phone: "", guests: 1, notes: "",
@@ -17,7 +19,7 @@ export default function BookingForm() {
       const token = localStorage.getItem("token");
       if (!token) return;
       try {
-        const res = await fetch("http://localhost:8001/api/me", {
+        const res = await fetch(`${API_URL}/me`, {
           headers: { Accept: "application/json", Authorization: `Bearer ${token}` },
         });
         if (!res.ok) { localStorage.removeItem("token"); return; }
@@ -78,7 +80,7 @@ export default function BookingForm() {
     setSubmitting(true);
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8001/api/bookings", {
+      const res = await fetch(`${API_URL}/bookings`, {
         method: "POST",
         headers: {
           Accept: "application/json",

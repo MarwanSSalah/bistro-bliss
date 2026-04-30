@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001/api";
+
 export default function AdminMenuItemsPage() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,7 +26,7 @@ export default function AdminMenuItemsPage() {
 
   const fetchMenuItems = async () => {
     try {
-      const res = await fetch("http://localhost:8001/api/menu-items", {
+      const res = await fetch(`${API_URL}/menu-items`, {
         headers: {
           Authorization: `Bearer ${token}`,
           Accept: "application/json",
@@ -52,7 +54,7 @@ export default function AdminMenuItemsPage() {
     setError(null);
 
     try {
-      const res = await fetch("http://localhost:8001/api/menu-items", {
+      const res = await fetch(`${API_URL}/menu-items`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
