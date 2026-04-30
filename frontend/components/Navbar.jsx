@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import NavLink from "./NavLink";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001/api";
+
 export default function Navbar() {
   const [user, setUser]       = useState(null);
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +21,7 @@ export default function Navbar() {
       const token = localStorage.getItem("token");
       if (!token) return;
       try {
-        const res = await fetch("http://localhost:8001/api/me", {
+        const res = await fetch(`${API_URL}/me`, {
           headers: { Accept: "application/json", Authorization: `Bearer ${token}` },
         });
         if (!res.ok) { localStorage.removeItem("token"); return; }
@@ -42,7 +44,7 @@ export default function Navbar() {
   const logout = async () => {
     const token = localStorage.getItem("token");
     try {
-      await fetch("http://localhost:8001/api/logout", {
+      await fetch(`${API_URL}/logout`, {
         method: "POST",
         headers: { Accept: "application/json", Authorization: `Bearer ${token}` },
       });
