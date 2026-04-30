@@ -18,6 +18,20 @@ use Illuminate\Http\Request;
 
 Route::get('/health', fn() => response()->json(['status' => 'OK'], 200));
 
+// TEMPORARY: one-time admin setup — will be removed after use
+Route::get('/setup-admin', function () {
+    if (User::where('email', 'admin@bistro.com')->exists()) {
+        return response()->json(['message' => 'Admin already exists']);
+    }
+    $user = User::create([
+        'name'     => 'Admin',
+        'email'    => 'admin@bistro.com',
+        'password' => bcrypt('admin1234'),
+        'role'     => 'ADMIN',
+    ]);
+    return response()->json(['message' => 'Admin created', 'email' => $user->email]);
+});
+
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
