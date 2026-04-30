@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+# Railway will detect PHP/Laravel automatically via nixpacks.
+# This start command runs migrations then serves the app on the port Railway assigns.
+startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan serve --host=0.0.0.0 --port=$PORT"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3

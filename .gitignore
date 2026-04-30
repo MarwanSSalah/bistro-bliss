@@ -1,0 +1,27 @@
+# ─── Secrets — never commit these ─────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ─── Frontend ──────────────────────────────────────────────────────────────────
+frontend/.next/
+frontend/node_modules/
+frontend/.vercel/
+frontend/out/
+frontend/build/
+
+# ─── Backend ───────────────────────────────────────────────────────────────────
+backend/project-name/vendor/
+backend/project-name/storage/logs/*.log
+backend/project-name/storage/framework/cache/
+backend/project-name/storage/framework/sessions/
+backend/project-name/storage/framework/views/
+backend/project-name/bootstrap/cache/
+
+# ─── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem
+.idea/
+.vscode/
