@@ -11,20 +11,14 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# Copy dependency manifests first (better Docker layer caching)
-COPY composer.json composer.lock ./
+# Copy ALL source files first so artisan is present when composer scripts run
+COPY . .
 
-# Install production dependencies in a clean environment (no prior install = no uninstall hooks)
+# Install production dependencies (artisan is now available for post-install hooks)
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
     --no-dev \
     --optimize-autoloader \
     --no-interaction
-
-# Copy the rest of the application
-COPY . .
-
-# Cache config and routes at build time
-RUN php artisan config:clear && php artisan route:clear
 
 # Storage permissions
 RUN chmod -R 775 storage bootstrap/cache
