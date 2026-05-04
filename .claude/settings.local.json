@@ -1,7 +1,47 @@
 {
   "permissions": {
     "allow": [
-      "Bash(echo.)"
+      "Bash(echo.)",
+      "Bash(git --version)",
+      "Bash(git credential-manager *)",
+      "Bash(git credential *)",
+      "Bash(cmdkey /list)",
+      "Bash(winget install *)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\")",
+      "Bash(gh auth *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__switch_browser",
+      "Bash(npm install *)",
+      "Bash(railway --version)",
+      "Bash(vercel --version)",
+      "Bash(railway login *)",
+      "Bash(winpty railway *)",
+      "Bash(jobs)",
+      "PowerShell(Start-Process powershell -ArgumentList \"-NoExit\", \"-Command\", \"railway login --browserless\" -PassThru | Select-Object -ExpandProperty Id)",
+      "Read(//c/Users/HP/AppData/Roaming/railway/**)",
+      "Read(//c/Users/HP/.railway/**)",
+      "Bash(railway whoami *)",
+      "Bash(railway init *)",
+      "Bash(railway add *)",
+      "Bash(railway variables *)",
+      "Bash(php artisan *)",
+      "Bash(railway service *)",
+      "Bash(railway up *)",
+      "Bash(railway domain *)",
+      "Read(//c/Users/HP/.local/share/com.vercel.cli/**)",
+      "Read(//c/Users/HP/AppData/Roaming/com.vercel.cli/**)",
+      "Bash(railway logs *)",
+      "Bash(curl -s -X POST https://backend-production-91fe.up.railway.app/api/login -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{\"email\":\"test@test.com\",\"password\":\"wrong\"}')",
+      "Bash(curl -s -o /dev/null -w 'Register route HTTP status: %{http_code}' -X POST https://backend-production-91fe.up.railway.app/api/register -H 'Content-Type: application/json' -H 'Accept: application/json' -d '{}')",
+      "Bash(curl -s https://backend-production-91fe.up.railway.app/api/health)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://backend-production-91fe.up.railway.app/)",
+      "Bash(curl -s https://backend-production-91fe.up.railway.app/)",
+      "Bash(curl -s -X POST https://backend-production-91fe.up.railway.app/api/register -H 'Content-Type: application/json' -d '{\"name\":\"Test User\",\"email\":\"test@example.com\",\"password\":\"password123\",\"password_confirmation\":\"password123\"}')",
+      "Bash(curl -s https://backend-production-91fe.up.railway.app/api/health -H \"Origin: https://frontend-ebon-seven-67.vercel.app\" -I)",
+      "Bash(curl -s -X OPTIONS https://backend-production-91fe.up.railway.app/api/login -H 'Origin: https://frontend-ebon-seven-67.vercel.app' -H 'Access-Control-Request-Method: POST' -H 'Access-Control-Request-Headers: Content-Type, Authorization' -I)",
+      "Bash(curl -v -X OPTIONS https://backend-production-91fe.up.railway.app/api/login -H 'Origin: https://frontend-ebon-seven-67.vercel.app' -H 'Access-Control-Request-Method: POST' -H 'Access-Control-Request-Headers: Content-Type, Authorization')",
+      "Bash(npx vercel *)",
+      "Bash(railway run php artisan tinker '--execute= *)"
     ]
   }
 }
