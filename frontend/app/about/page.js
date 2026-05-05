@@ -523,7 +523,7 @@ export default function About() {
               Our story began with a vision to create a unique dining experience
               that merges fine dining, exceptional service, and a vibrant
               ambiance. Rooted in the city&apos;s rich culinary culture, we honour
-              our local roots while infusing a global palate. At Happy Tummy,
+              our local roots while infusing a global palate. At Bistro Bliss,
               dining is not just about food — it&apos;s about the whole experience.
             </p>
             <a href="#about-details" className="ab-btn-outline-lt">
@@ -591,7 +591,7 @@ export default function About() {
               A little information<br />for our <em>valued guests</em>
             </h2>
             <p className="ab-body-text" style={{ marginTop: '1rem' }}>
-              At Happy Tummy, we believe that dining is not just about food, but
+              At Bistro Bliss, we believe that dining is not just about food, but
               also about the overall experience. Our staff strives to make every
               visit an unforgettable event.
             </p>
@@ -655,7 +655,7 @@ export default function About() {
               {
                 q: "One of a kind",
                 n: "Andy Smith", c: "San Francisco, CA", img: "/images/andy.jpg",
-                review: "Nowhere else in the city matches the care put into every plate. Happy Tummy has raised the bar for what a restaurant experience should feel like.",
+                review: "Nowhere else in the city matches the care put into every plate. Bistro Bliss has raised the bar for what a restaurant experience should feel like.",
               },
             ].map((t, i) => (
               <div key={t.n} className="ab-testi-card">

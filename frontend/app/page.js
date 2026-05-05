@@ -940,7 +940,7 @@ export default function Home() {
               {
                 q: "One of a kind",
                 n: "Andy Smith", c: "San Francisco, CA", img: "/images/andy.jpg",
-                review: "Nowhere else in the city matches the care put into every plate. Happy Tummy has raised the bar for what a restaurant experience should feel like.",
+                review: "Nowhere else in the city matches the care put into every plate. Bistro Bliss has raised the bar for what a restaurant experience should feel like.",
               },
             ].map((t, i) => (
               <div key={t.n} className="testi-card reveal visible" style={{ transitionDelay: `${i * 0.15}s` }}>

@@ -125,7 +125,7 @@ export default function ProfilePage() {
                   label: "Member Since",
                   value: user.created_at
                     ? new Date(user.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long" })
-                    : "Happy Tummy Member",
+                    : "Bistro Bliss Member",
                 },
               ].map(({ label, value, admin }) => (
                 <div key={label} className="pf-field">

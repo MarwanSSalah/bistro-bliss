@@ -335,7 +335,7 @@ export default function LoginPage() {
           <div className="lg-left-orb" />
           <div className="lg-left-orb2" />
           <div className="lg-left-content">
-            <div className="lg-left-eyebrow">Happy Tummy</div>
+            <div className="lg-left-eyebrow">Bistro Bliss</div>
             <h2 className="lg-left-title">
               A table awaits<br /><em>your return.</em>
             </h2>

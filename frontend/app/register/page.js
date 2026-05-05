@@ -356,7 +356,7 @@ export default function RegisterPage() {
 
             <div className="rg-eyebrow">New Account</div>
             <h1 className="rg-title">
-              Join <em>Happy Tummy</em>
+              Join <em>Bistro Bliss</em>
             </h1>
             <p className="rg-sub">Create your account and start your culinary journey</p>
 
@@ -465,12 +465,12 @@ export default function RegisterPage() {
           <div className="rg-right-orb" />
           <div className="rg-right-orb2" />
           <div className="rg-right-content">
-            <div className="rg-right-eyebrow">Happy Tummy</div>
+            <div className="rg-right-eyebrow">Bistro Bliss</div>
             <h2 className="rg-right-title">
               Your seat at the<br /><em>table awaits.</em>
             </h2>
             <p className="rg-right-sub">
-              Join thousands of food lovers wh&apos;ve made Happy Tummy their
+              Join thousands of food lovers wh&apos;ve made Bistro Bliss their
               favourite dining destination in Los Angeles.
             </p>
 

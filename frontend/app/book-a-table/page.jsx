@@ -1,7 +1,7 @@
 import BookingForm from "../../components/Booking/BookingForm";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "Book A Table • Happy Tummy" };
+export const metadata = { title: "Book A Table • Bistro Bliss" };
 
 export default function BookATablePage() {
   return (
@@ -231,7 +231,7 @@ export default function BookATablePage() {
               Book <em>A Table</em>
             </h1>
             <p className="bt-hero-sub">
-              Reserve your seat at Happy Tummy and let us craft an
+              Reserve your seat at Bistro Bliss and let us craft an
               unforgettable dining experience just for you.
             </p>
             <div className="bt-info-row">
@@ -260,7 +260,7 @@ export default function BookATablePage() {
               allowFullScreen=""
               loading="eager"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Happy Tummy location"
+              title="Bistro Bliss location"
             />
           </div>
 

@@ -249,7 +249,7 @@ export default function Footer() {
 
         {/* ── Bottom bar ── */}
         <div className="ft-bottom">
-          <span>© {new Date().getFullYear()} Happy Tummy. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Bistro Bliss. All rights reserved.</span>
           <div className="ft-bottom-links">
             <a href="#" className="ft-bottom-link">Privacy Policy</a>
             <a href="#" className="ft-bottom-link">Terms of Use</a>
