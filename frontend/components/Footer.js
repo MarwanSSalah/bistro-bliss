@@ -170,7 +170,7 @@ export default function Footer() {
               <div className="ft-brand-icon">
                 <Image src="/icons/sushi.svg" alt="logo" width={20} height={20} />
               </div>
-              <span className="ft-brand-name">Happy <em>Tummy</em></span>
+              <span className="ft-brand-name">Bistro <em>Bliss</em></span>
             </Link>
             <p className="ft-tagline">
               A culinary haven in the heart of Los Angeles — where every meal is
