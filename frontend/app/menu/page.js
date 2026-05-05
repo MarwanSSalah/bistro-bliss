@@ -418,7 +418,7 @@ export default function MenuPage() {
         <div className="ht-menu-hero-orb" />
         <div className="ht-menu-hero-content">
           <div className="ht-eyebrow" style={{ justifyContent: 'center', color: 'var(--gold)' }}>
-            Happy Tummy
+            Bistro Bliss
           </div>
           <h1 className="ht-section-title" style={{ marginBottom: '1rem' }}>
             Our <em>Menu</em>

@@ -367,7 +367,7 @@ export default function LoginPage() {
 
             {/* brand */}
             <Link href="/" className="lg-brand">
-              Happy <em>Tummy</em>
+              Bistro <em>Bliss</em>
             </Link>
 
             {/* heading */}
