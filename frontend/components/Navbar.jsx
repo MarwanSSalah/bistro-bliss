@@ -327,7 +327,7 @@ export default function Navbar() {
             <Image src="/icons/sushi.svg" alt="logo" width={20} height={20} />
           </div>
           <span className="ht-logo-text">
-            Happy <em>Tummy</em>
+            Bistro <em>Bliss</em>
           </span>
         </Link>
 
